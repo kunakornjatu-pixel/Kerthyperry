@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kawaii Profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffe6f0, #ffd6f5, #e6faff);
+      font-family: 'Baloo 2', cursive;
+      color: #fff;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 4px solid #ff99cc;
+      border-radius: 30px;
+      box-shadow: 0 0 20px #ffb3e6, 0 0 40px #a3e6ff;
+      padding: 35px;
+      max-width: 420px;
+      text-align: center;
+      position: relative;
+      animation: floaty 3s ease-in-out infinite;
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* emoji ตกแต่ง */
+    .decor-heart { position: absolute; top: -15px; left: -15px; font-size: 28px; }
+    .decor-star { position: absolute; top: -15px; right: -15px; font-size: 28px; }
+    .decor-flower { position: absolute; bottom: -15px; right: -15px; font-size: 28px; }
+    .decor-sparkle { position: absolute; bottom: -15px; left: -15px; font-size: 28px; }
+
+    .profile-card img {
+      border-radius: 20px;
+      width: 200px;
+      height: 260px;
+      object-fit: cover;
+      border: 4px solid #ffb3e6;
+      box-shadow: 0 0 15px #ff99cc, 0 0 25px #a3e6ff;
+    }
+
+    .profile-card h1 {
+      font-size: 24px;
+      margin: 20px 0 10px;
+      color: #ff66a3;
+      text-shadow: 0 0 6px #ffcce6;
+    }
+
+    /* bubble speech สไตล์การ์ตูน */
+    .speech-bubble {
+      background: #fff;
+      border: 2px solid #ffb3e6;
+      border-radius: 20px;
+      padding: 10px 15px;
+      margin: 10px auto;
+      display: inline-block;
+      color: #444;
+      font-size: 14px;
+      position: relative;
+      box-shadow: 2px 2px 8px rgba(255, 153, 204, 0.4);
+    }
+
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 30px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top-color: #fff;
+      filter: drop-shadow(1px 1px 1px rgba(255, 179, 230, 0.5));
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      font-size: 14px;
+      color: #fff;
+      background: #ff99cc;
+      border: 2px solid #a3e6ff;
+      border-radius: 25px;
+      text-decoration: none;
+      text-shadow: 0 0 5px #fff;
+      box-shadow: 0 0 15px #ffb3e6, 0 0 30px #a3e6ff;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #a3e6ff;
+      color: #333;
+      box-shadow: 0 0 25px #a3e6ff, 0 0 40px #ff99cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="decor-heart">💖</div>
+    <div class="decor-star">✨</div>
+    <div class="decor-flower">🌸</div>
+    <div class="decor-sparkle">⭐</div>
+
+    <img src="Kaythy.jpg" alt="Kunakorn">
+    <h1>Kunakorn Jatuten</h1>
+
+    <div class="speech-bubble">📧 E-mail : k4517048039@gmail.com</div>
+    <div class="speech-bubble">🏫 Department : Teacher</div>
+    <div class="speech-bubble">🌼 Faculty : Chomchonbanyangku School</div>
+
+    <a href="mailto:k4517048039@gmail.com" class="btn">💌 CONTACT ME</a>
+  </div>
+</body>
+</html>
